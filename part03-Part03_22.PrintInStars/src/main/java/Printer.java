@@ -8,7 +8,20 @@ public class Printer {
     }
 
     public static void printArrayInStars(int[] array) {
-        // Write some code in here
+
+        for (int i = 0; i < array.length; i++) {
+            printStars(array[i]);
+            System.out.println("");
+
+        }
+    }
+
+    public static void printStars(int number) {
+        int stars = 0;
+        for (int i = stars; i < number; i++) {
+            System.out.print("*");
+            stars++;
+        }
     }
 
 }
